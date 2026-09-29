@@ -1,0 +1,32 @@
+{
+  "project": "ElectroPatch",
+  "version": "0.1.0",
+  "pdb_id": "1HDD",
+  "pdb_sha256": "ed67971db072a4465dfab2e020ba1c3ce509057fc58a059e0ff1dd8eed179b42",
+  "protein_chains": [
+    "C",
+    "D"
+  ],
+  "dna_chains": [
+    "A",
+    "B"
+  ],
+  "chain_id_convention": "PDB author chain IDs",
+  "protein_heavy_atoms": 962,
+  "dna_heavy_atoms": 855,
+  "seed": 42,
+  "n_decoys": 50,
+  "n_poses": 51,
+  "native_rank": 1,
+  "native_geometry_rank": 15,
+  "native_percentile": 100.0,
+  "decoys_below_native": 50,
+  "score_formula": "z(contacts) + z(basic_phosphate_contacts) - 2*z(clashes) - z(mean_nearest_distance)",
+  "zscore_definition": "population standard deviation over all poses; constant features contribute zero",
+  "distance_definition": "mean nearest protein heavy-atom distance over all DNA heavy atoms",
+  "contact_cutoff_angstrom": 4.5,
+  "clash_cutoff_angstrom": 2.0,
+  "numpy_version": "1.26.4",
+  "scipy_version": "1.11.4",
+  "matplotlib_version": "3.6.3"
+}

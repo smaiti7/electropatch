@@ -1,0 +1,9 @@
+pdb_id,system_name,filename,protein_chains,dna_chains,method,resolution_angstrom,source_url,sha256,selection_note
+1AAY,Zif268 zinc finger,1AAY.pdb,A,"B,C",X-ray diffraction,1.60,https://files.rcsb.org/download/1AAY.pdb,303d41b3940088d157aceae7a80975e7ae45fd5e9b4b31484a32e217d06e1a04,One protein chain and complete DNA duplex
+1LMB,Lambda repressor,1LMB.pdb,"3,4","1,2",X-ray diffraction,1.80,https://files.rcsb.org/download/1LMB.pdb,a61e5ae05fe2c588dc4c86943774f90b6610313cea8040e1b0189dc5c0548257,Protein dimer and operator DNA duplex
+1TRO,Trp repressor,1TRO.pdb,"A,C","I,J",X-ray diffraction,1.90,https://files.rcsb.org/download/1TRO.pdb,636197b45e02cd1d2356b6cb376cacb0ff6086626543795e81ae131e50d948b0,One protein dimer and cognate DNA duplex; second crystallographic copy excluded
+1A3Q,NF-kappa-B p52,1A3Q.pdb,"A,B","C,D",X-ray diffraction,2.10,https://files.rcsb.org/download/1A3Q.pdb,7edb9f0989d29426b8de3720682c08efe25cdf9cbff130e4e10cba9248c51da0,P52 dimer bound to one DNA duplex
+1HDD,Engrailed homeodomain,1HDD.pdb,"C,D","A,B",X-ray diffraction,2.80,https://files.rcsb.org/download/1HDD.pdb,ed67971db072a4465dfab2e020ba1c3ce509057fc58a059e0ff1dd8eed179b42,Two homeodomain protein chains contacting one DNA duplex
+1MNM,MATalpha2/MCM1 transcription complex,1MNM.pdb,"A,B,C,D","E,F",X-ray diffraction,2.25,https://files.rcsb.org/download/1MNM.pdb,6128d6eea5e5f1c6c6ea78627e028a5347842c3383b5c47635a480dffa6674df,All four protein chains and one DNA duplex
+1RM1,TBP/TFIIA/TATA-box DNA,1RM1.pdb,A,"D,E",X-ray diffraction,2.50,https://files.rcsb.org/download/1RM1.pdb,ad257d01fc769339de78ebffe0d178efbf87eda158877997bb7c4123085b1d77,DNA-contacting TBP chain A; TFIIA B and C excluded because contacts are negligible
+1PUE,PU.1 ETS domain,1PUE.pdb,E,"A,B",X-ray diffraction,2.10,https://files.rcsb.org/download/1PUE.pdb,f2431a3ccae8b0e30a6a21fa796f15b092e795ea1613dd31d76425e9f66aa8ef,"One ETS domain and one DNA duplex; second crystallographic copy C,D/F excluded"

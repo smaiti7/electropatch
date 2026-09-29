@@ -1,0 +1,9 @@
+pdb_id,system_name,resolution_angstrom,protein_chains,dna_chains,n_poses,native_rank_geometry,native_rank_combined,rank_change_with_contact_descriptor,native_percentile_combined,native_contacts,native_clashes,native_basic_phosphate_contacts
+1AAY,Zif268 zinc finger,1.60,A,"B,C",51,18,19,-1,64.0,394,0,17
+1LMB,Lambda repressor,1.80,"3,4","1,2",51,9,8,1,86.0,432,0,8
+1TRO,Trp repressor,1.90,"A,C","I,J",51,6,19,-13,64.0,412,0,13
+1A3Q,NF-kappa-B p52,2.10,"A,B","C,D",51,22,26,-4,50.0,420,0,9
+1HDD,Engrailed homeodomain,2.80,"C,D","A,B",51,15,1,14,100.0,312,0,25
+1MNM,MATalpha2/MCM1 transcription complex,2.25,"A,B,C,D","E,F",51,3,4,-1,94.0,1135,0,39
+1RM1,TBP/TFIIA/TATA-box DNA,2.50,A,"D,E",51,12,11,1,80.0,487,0,14
+1PUE,PU.1 ETS domain,2.10,E,"A,B",51,8,11,-3,80.0,336,0,16

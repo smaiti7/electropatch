@@ -1,0 +1,21 @@
+{
+  "study_type": "exploratory synthetic-decoy ranking; not external predictive validation",
+  "protocol": "LeaveOneGroupOut by PDB complex; all 51 poses of the held-out complex excluded from fitting",
+  "training_features": [
+    "contacts_per_dna_atom",
+    "clashes_per_dna_atom",
+    "basic_phosphate_contacts_per_dna_atom",
+    "mean_nearest_distance"
+  ],
+  "model": "StandardScaler then LogisticRegression(C=1.0, class_weight='balanced', solver='lbfgs', max_iter=1000)",
+  "feature_scaling": "contact counts divided by the number of DNA heavy atoms; StandardScaler fitted on training folds only",
+  "label_definition": "experimental pose=1; generated rigid-body decoys=0",
+  "n_complexes": 8,
+  "n_samples": 408,
+  "n_native": 8,
+  "median_native_rank_ml": 1.5,
+  "native_top5_count_ml": 8,
+  "manifest_sha256": "0844f14b6f6ff0950c9ca9041c80e2fc090a68e2d6215208b80ea3212f768624",
+  "comparison_csv_sha256": "b9d89c7ef380e2ffdfff7433bfce7eb28fd2146ffd7b2d24cb3f7c2a0b8334ad",
+  "scikit_learn_version": "1.9.1"
+}

@@ -1,0 +1,9 @@
+pdb_id,system_name,n_poses,training_complexes,native_rank_geometry,native_rank_combined,native_rank_ml,native_probability
+1AAY,Zif268 zinc finger,51,7,18,19,4,0.93965034
+1LMB,Lambda repressor,51,7,9,8,1,0.71382602
+1TRO,Trp repressor,51,7,6,19,4,0.79015163
+1A3Q,NF-kappa-B p52,51,7,22,26,1,0.76167805
+1HDD,Engrailed homeodomain,51,7,15,1,1,0.73206770
+1MNM,MATalpha2/MCM1 transcription complex,51,7,3,4,1,0.77422417
+1RM1,TBP/TFIIA/TATA-box DNA,51,7,12,11,2,0.46445342
+1PUE,PU.1 ETS domain,51,7,8,11,5,0.82588515

@@ -1,0 +1,11 @@
+name: electropatch
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - pip
+  - numpy>=1.23
+  - scipy>=1.9
+  - matplotlib>=3.5
+  - pip:
+      - -e .[ml]

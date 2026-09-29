@@ -1,0 +1,11 @@
+{
+  "study_type": "exploratory pilot; selected protein-DNA complexes",
+  "n_complexes": 8,
+  "n_decoys_per_complex": 50,
+  "seed": 42,
+  "scores_comparable_across_complexes": false,
+  "comparison_basis": "native ranks within each complex's fixed 51-pose candidate set",
+  "median_native_rank_combined": 11.0,
+  "native_top5_count_combined": 2,
+  "manifest_sha256": "0844f14b6f6ff0950c9ca9041c80e2fc090a68e2d6215208b80ea3212f768624"
+}
