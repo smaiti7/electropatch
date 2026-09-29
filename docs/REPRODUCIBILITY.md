@@ -1,6 +1,6 @@
 # ElectroPatch: reproducibility record
 
-This record describes the committed eight-complex comparison and leave-one-complex-out ML pilot. Run every command from the repository root. The [analysis](ANALYSIS.md) interprets the measured results; [GitHub upload instructions](../GITHUB_UPLOAD.md) cover publication and personal details.
+This record describes the committed eight-complex comparison and leave-one-complex-out ML pilot. Run every command from the repository root. The [analysis](ANALYSIS.md) interprets the measured results.
 
 ## 1. Frozen inputs
 
@@ -104,9 +104,9 @@ PNG bytes can vary with Matplotlib and rendering versions while showing the same
 
 ## 6. Colab route
 
-After the repository is public, replace `YOUR_USERNAME` in the README badge and open the notebook. Choose **Runtime → Run all**, paste the public GitHub URL when prompted, and inspect the tables and inline figures. The notebook clones the repository, prints the Git commit, installs this same package with the `[ml]` extra, and runs both comparison commands with the frozen manifest. The optional final cell packages `results/` and `figures/` as a ZIP. The notebook was syntax-checked and its Python calculation cells were run locally; a hosted Colab run requires the public GitHub repository and should be checked after push.
+Open the README or notebook **Open in Colab** badge and choose **Runtime → Run all**. The public GitHub URL is prefilled. The notebook clones the repository, prints the Git commit, installs this same package with the `[ml]` extra, and runs both comparison commands with the frozen manifest. Set `STORAGE_MODE` to `temporary` for runtime storage and a ZIP, `drive` for a persistent Google Drive run folder, or `off` to discard generated files after display. The notebook was syntax-checked and its calculation cells were run locally from a fresh clone of the public repository; an authenticated hosted Colab runtime has not been exercised here.
 
-Record the pushed code revision with `git rev-parse HEAD`. Colab's printed commit should match it. Colab session storage is temporary; download the ZIP to retain generated outputs.
+Record the pushed code revision with `git rev-parse HEAD`. Colab's printed commit should match it. Temporary Colab session storage disappears when the runtime is deleted; download the ZIP or choose Drive mode to retain generated outputs.
 
 ## 7. Development and execution history
 

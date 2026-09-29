@@ -31,7 +31,7 @@ Read the [scientific analysis](docs/ANALYSIS.md) for failures, chain choices and
 
 ## Run in Colab
 
-After publishing this repository, open the badge above, select **Runtime → Run all**, and paste the public repository URL. The notebook installs the package, verifies the frozen PDB checksums, runs both comparisons, shows both figures plus per-complex plots, and offers a ZIP download. No GPU is needed. The notebook calls this repository's code.
+Open the badge above and select **Runtime → Run all**. The notebook already has this repository URL, installs the package, verifies the frozen PDB checksums, and shows both comparisons plus per-complex plots. Set `STORAGE_MODE` in its first code cell to `temporary` (runtime files and ZIP), `drive` (persistent Google Drive run folder), or `off` (delete generated files after display). No GPU is needed.
 
 ## Run locally
 
@@ -62,10 +62,10 @@ The optional ML analysis uses the four raw descriptors, divides the three count 
 - `colab/`: online notebook and instructions.
 - `docs/`: detailed analysis and separate reproducibility record.
 - `tests/`, `.github/workflows/test.yml`: local and CI checks.
-- [`ELECTROSTATICS_ROADMAP.md`](ELECTROSTATICS_ROADMAP.md): a later Poisson–Boltzmann study, with preparation and sensitivity work.
 
 ## Limits and publication
 
 These decoys are rigid perturbations and can clash; their difficulty varies with interface size and shape. All eight natives have zero ≤2 Å clashes, a strong artificial cue the model may exploit. The eight structures are selected examples, not a representative, independent benchmark. Biological assemblies, missing interface atoms, cofactors and protonation have not been fully curated. The basic-phosphate feature is a geometric proxy, not a Poisson–Boltzmann potential, free energy or explicit electrostatic calculation.
 
-The code is MIT licensed. PDB coordinates are credited through the RCSB links and frozen source URLs. Follow [GITHUB_UPLOAD.md](GITHUB_UPLOAD.md) to review your author details, verify, and publish the repository.
+The code is MIT licensed. PDB coordinates are credited through the RCSB links and frozen source URLs.
+ 
