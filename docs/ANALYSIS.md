@@ -23,7 +23,7 @@ A native-contact check at 4.5 Å found at least 312 cross-partner heavy-atom pai
 
 ## Fixed decoys and scoring
 
-For each complex, protein coordinates stay fixed and the selected DNA duplex is rigidly transformed about its centroid. NumPy `default_rng(42)` creates 25 near decoys (rotation 2–15°, translation 0.5–3 Å) and 25 harder decoys (15–40°, 3–8 Å). No decoy is rejected, relaxed or energy minimized. Every transformation is stored in the per-pose CSV.
+For each complex, the protein coordinates remain fixed while the selected DNA duplex is rigidly transformed about its centroid. NumPy `default_rng(42)` generates 25 near-native decoys (2–15° rotation and 0.5–3 Å translation) and 25 larger-perturbation or harder decoys (15–40° rotation and 3–8 Å translation). The latter retain the machine-readable label `hard` in the output files. No decoy is rejected, structurally relaxed, or energy-minimized, and every transformation is recorded in the per-pose CSV.
 
 Four features are calculated from selected `ATOM` heavy atoms: cross-partner contacts at ≤4.5 Å; clashes at ≤2.0 Å; Lys NZ or Arg NE/NH1/NH2 to DNA phosphate OP1/OP2 (or O1P/O2P) contacts at ≤4.5 Å; and the mean nearest protein heavy-atom distance for **all** DNA heavy atoms. Within each 51-pose set, population z-scores are calculated separately. A constant feature contributes zero.
 

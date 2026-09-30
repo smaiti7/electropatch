@@ -49,7 +49,7 @@ repro_dir=$(mktemp -d /tmp/electropatch-repro.XXXXXX)
 electropatch compare --manifest data/manifest.csv --n-decoys 50 --seed 42 --output-dir "$repro_dir"
 ```
 
-The fixed-score implementation applies SciPy `cKDTree` to heavy-atom pairs. There are 25 near rigid-body transforms (2–15° and 0.5–3 Å) and 25 harder transforms (15–40° and 3–8 Å). Rotations use the selected DNA centroid. No candidate is rejected or relaxed. The feature definitions and score equations are specified in [ANALYSIS.md](ANALYSIS.md); every transform, descriptor and score is in the per-pose CSV. Each of the 51-pose sets is z-standardized separately with population standard deviation (`ddof=0`), and a constant feature contributes zero. Descending scores define ranks, with generation order resolving ties.
+The fixed-score implementation uses SciPy `cKDTree` to evaluate heavy-atom pairs. It generates 25 near-native rigid-body transformations (2–15° rotation and 0.5–3 Å translation) and 25 larger-perturbation transformations (15–40° rotation and 3–8 Å translation); the latter retain the machine-readable label `hard` in the output files. Rotations are performed about the selected DNA centroid. No candidate is rejected, structurally relaxed, or energy-minimized. The feature definitions and scoring equations are specified in [ANALYSIS.md](ANALYSIS.md), and every transformation, descriptor, and score is recorded in the per-pose CSV. Each 51-pose candidate set is standardized separately using the population standard deviation (`ddof=0`), with constant features contributing zero. Scores are ranked in descending order, with generation order used to resolve ties.
 
 ## 4. Run the ML analysis
 
