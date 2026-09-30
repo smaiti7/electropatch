@@ -2,6 +2,8 @@
 
 **A reproducible, exploratory comparison of protein–DNA interface descriptors across eight crystal structures.**
 
+[![Tests](https://github.com/smaiti7/electropatch/actions/workflows/test.yml/badge.svg)](https://github.com/smaiti7/electropatch/actions/workflows/test.yml)
+
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/smaiti7/electropatch/blob/main/colab/ElectroPatch_Comparison.ipynb)
 
 ElectroPatch creates 50 deterministic rigid-body DNA decoys per structure, scores four interpretable interface descriptors, and ranks the experimental pose among 51 candidates. It compares a fixed combined heuristic with a geometry-only ablation. An optional logistic model is evaluated by leaving **one entire complex** out at a time. This is a software and scientific-method pilot using synthetic decoys, not a validated docking predictor or an electrostatic energy calculation.
